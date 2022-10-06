@@ -7,6 +7,7 @@
     </script>
     <link rel="stylesheet" href="style/style.css">
     <style src="style/style.css"></style>
+    <link rel='stylesheet' type='text/css' href='css/style.php' />
 </head>
 <body>
 <header>
@@ -77,5 +78,13 @@
       </li>
   </ul>
 </footer>
+<span>>
+<?php
+// Set the new timezone
+date_default_timezone_set('Europe/Berlin');
+$date = date('d.m.y h:i:s');
+echo $date;
+?>
+    </span>
 </body>
 </html>

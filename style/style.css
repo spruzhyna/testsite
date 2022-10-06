@@ -17,6 +17,7 @@ a {
     color:green;
     text-decoration: none;
 }
+}
 h1 {
     text-align: center;
     font-family: serif;
@@ -44,6 +45,138 @@ p {
 em {
     font-style: italic;
 }
+header {
+    max-height: 50px;
+    max-width: 1230px;
+    padding:14px 25px ;
+    background-color: black;
+    border-radius: 10px;
+}
+ul {
+    margin-top: 15px;
+}
+.header-left {
+    float: left;
+    padding: 14px 25px;
+    background-color: violet;
+    font-size: 18px;
+    border-radius: 10px;
+    width: fit-content;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
 .header-right {
     float: right;
+    padding: 0px 25px;
+    background-color: violet;
+    font-size: 18px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+footer {
+    max-height: 50px;
+    max-width: 1230px;
+    padding:14px 25px ;
+    background-color: black;
+    border-radius: 10px;
+}
+.footer {
+    display: flex;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    float:left;
+    padding: 14px 25px;
+    background-color: violet;
+    font-size: 18px;
+}
+button {
+    background-color: violet;
+    font-size: 24px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -15px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.text {
+    color: red;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.numbertext {
+    color: red;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 15px;
+}
+.mySlides {
+    display: none;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+#bgbm {
+    text-align: center;
+    font-size: 60px;
+}
+.images {
+    display: flex;
+    object-fit: cover;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+}
+span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
 }
