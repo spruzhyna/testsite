@@ -80,11 +80,11 @@
 </footer>
 <span>>
 <?php
-// Set the new timezone
 date_default_timezone_set('Europe/Berlin');
 $date = date('d.m.y h:i:s');
 echo $date;
 ?>
+    <h1>Test!</h1>
     </span>
 </body>
 </html>
