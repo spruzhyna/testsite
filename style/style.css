@@ -75,8 +75,9 @@ ul {
     padding-bottom: 10px;
 }
 footer {
-    max-height: 50px;
+    height: fit-content;
     max-width: 1230px;
+    padding-bottom: 4px;
     padding:14px 25px ;
     background-color: black;
     border-radius: 10px;
@@ -84,13 +85,11 @@ footer {
 .footer {
     display: flex;
     width: fit-content;
-    padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
     float:left;
     padding: 14px 25px;
     background-color: violet;
-    font-size: 18px;
 }
 button {
     background-color: violet;
