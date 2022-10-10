@@ -43,10 +43,7 @@ em {
     font-style: italic;
 }
 header {
-    height: fit-content;
-    max-width: 1230px;
-    padding-bottom: 4px;
-    padding:14px 25px ;
+    padding:0px 10px ;
     background-color: black;
     border-radius: 10px;
 }
@@ -55,40 +52,36 @@ ul {
 }
 .header-left {
     float: left;
-    padding: 14px 25px;
+    padding: 2px 2px;
     background-color: violet;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 10px;
     width: fit-content;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 .header-right {
     margin-left: auto;
-    padding: 0px 25px;
+    padding: 0px 11px;
     background-color: violet;
     font-size: 18px;
     border-radius: 10px;
     display: flex;
     width: fit-content;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: -9px;
+    padding-bottom: 4px;
 }
 footer {
-    height: fit-content;
-    max-width: 1230px;
-    padding-bottom: 4px;
-    padding:14px 25px ;
+    height: 25px;
+    margin-top: 5px;
     background-color: black;
     border-radius: 10px;
 }
 .footer {
     display: flex;
     width: fit-content;
-    padding-bottom: 10px;
     border-radius: 10px;
-    float:left;
-    padding: 14px 25px;
+    padding: 3px 20px;
     background-color: violet;
 }
 button {
@@ -203,7 +196,6 @@ span {
 .product-categories {
     display: flex;
 }
-
 .burger-salad {
     width: fit-content;
     display: flex;
