@@ -181,3 +181,32 @@ span {
     display: flex;
     flex-wrap: wrap;
 }
+.product-categories {
+    margin-right: auto;
+    margin-left: auto;
+    color: green;
+}
+#bgbm2 {
+    text-align: center;
+    font-size: 60px;
+    color: green;
+}
+.food-categories {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto ;
+    max-height: 300px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+}
+.product-categories {
+    display: flex;
+}
+
+.burger-salad {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
