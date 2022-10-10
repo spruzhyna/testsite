@@ -165,8 +165,8 @@ button {
 }
 
 .photo {
-    width: 300px;
-    height: 300px;
+    width: fit-content;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     padding: 0 10px;
@@ -176,4 +176,8 @@ span {
     font-weight: bold;
     margin-right: auto;
     margin-left: auto;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
