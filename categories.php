@@ -7,6 +7,24 @@
         <style src="style/style.css"></style>
     </head>
 <body>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+  echo "<script type='text/javascript'>
+    window.location.href = 'testsite.com/404.php';
+    </script>";
+}
+$conn->close();
+?>
+
 <header>
     <h1 id="bgbm2">Categories</h1>
 </header>
@@ -17,6 +35,7 @@
     <div class="product-categories">
      <div class="burger-salad">  
         <a href="salat.html" target="_blank">
+            
         </div>
             <img src="https://www.momontimeout.com/wp-content/uploads/2021/06/fruit-salad-square.jpeg" alt="photo" />
                 <span class="item-txt">Salad</span>
