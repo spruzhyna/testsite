@@ -43,6 +43,8 @@ if ($result) {
 </div>
 <div class="Info"><?php echo $row["Info"]?> </div>
 </a>
+
+
     <?php
 }
   $conn->close();
