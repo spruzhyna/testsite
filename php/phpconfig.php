@@ -27,11 +27,15 @@ $queryies = array (
     categoriesname VARCHAR(30) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )",
-)  ;    
-if ($conn->query($sql) === TRUE) {
-    echo "Tables created successfully";
+)  ;  
+
+
+foreach($queryies as $sql) {
+    if ($conn->query($sql) === TRUE) {
+        echo "Single table has been created successfully";
     } else {
-    echo "Error creating tables: " . $conn->error;
+        echo "Error cr‚eating tables: " . $conn->error;
     }
-    $conn->close();
+}
+$conn->close();
 ?>
