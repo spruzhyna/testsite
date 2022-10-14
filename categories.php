@@ -34,14 +34,14 @@ $conn->close();
         </div>
     <div class="product-categories">
      <div class="burger-salad">  
-        <a href="salat.html" target="_blank">
+        <a href="salat.php" target="_blank">
             
         </div>
             <img src="https://www.momontimeout.com/wp-content/uploads/2021/06/fruit-salad-square.jpeg" alt="photo" />
-                <span class="item-txt">Salad</span>
+                <span class="item-txt">Salat´s</span>
         </a>
         <div class="burger-salad">
-        <a href="burger.html" target="_blank">
+        <a href="burger.php" target="_blank">
         </div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRC-gBHwsSzdRr52iYTQ-myf9k7jemDgYr-9FXrWKC7yCMQtF9I8m_1e2--k8Gao7_us&usqp=CAU" alt="photo" />
             <span class="item-txt">Burgers</span>

@@ -7,16 +7,49 @@
         <style src="testsite/style/style.css"></style>
     </head>
 <body>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+  echo "<script type='text/javascript'>
+    window.location.href = 'testsite.com/404.php';
+    </script>";
+}
+$sql = "SELECT id, burgername, Categoryid FROM Burgers";
+$result = $conn->query($sql);
+
+while($row = mysqli_fetch_array($result)) {
+    echo "id: " . $row["id"]. " - Burger: " . $row["burgername"]. " " . $row["Categoryid"]. "<br>";
+  }
+
+if ($result) {
+  // output data of each row
+  while($row = mysqli_fetch_array($result)) {
+    echo "id: " . $row["id"]. " - Burger: " . $row["burgername"]. " " . $row["Categoryid"]. "<br>";
+  }
+  $conn->close();
+} else {
+  echo "0 results";
+  $conn->close();
+}
+
+?>
 <header>
     <ul>
         <li>
             <div class="header-left">
-                <a href="index.html" target="_blank"> Main</a>
-                <a href="categories.html" target="_blank">Categories</a>
+                <a href="index.php" target="_blank"> Main</a>
+                <a href="categories.php" target="_blank">Categories</a>
                 <a href="#" target="_blank">Delivery</a>
             </div>
             <div class="header-right">
-                <a href="salat.html" target="_blank">Salad</a>
+                <a href="salat.php" target="_blank">Salat</a>
             </div>
         </li>
     </ul>

@@ -13,7 +13,7 @@
     <div class="header-left">
         <a href="index2.html" target="_blank"> Menu</a>
         <a href="http://lindbaum.de" target="_blank"> Lindbaum</a>
-        <a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank"> Header</a>
+        <a href="categories.php" target="_blank"> Categories</a>
     </div>
     <div class="header-right">
         <a href="https://www.w3schools.com/howto/howto_css_responsive_header.asp" target="_blank">Header</a>

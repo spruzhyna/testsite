@@ -11,12 +11,12 @@
     <ul>
         <li>
             <div class="header-left">
-                <a href="index.html" target="_blank"> Main</a>
-                <a href="categories.html" target="_blank">Categories</a>
+                <a href="index.php" target="_blank"> Main</a>
+                <a href="categories.php" target="_blank">Categories</a>
                 <a href="#" target="_blank">Delivery</a>
             </div>
             <div class="header-right">
-                <a href="burger.html" target="_blank">Burger</a>
+                <a href="burger.php" target="_blank">Burger</a>
             </div>
         </li>
     </ul>
