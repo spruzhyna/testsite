@@ -45,5 +45,6 @@ if (!isLoggedIn()) {
         </div>
     </div>
 </div>
+<h1>Test</h1>
 </body>
 </html>
