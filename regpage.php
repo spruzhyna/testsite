@@ -9,7 +9,7 @@ if (!isLoggedIn()) {
 <html>
 <head>
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 <div class="header">
@@ -41,10 +41,10 @@ if (!isLoggedIn()) {
                     <a href="index.php?logout='1'" style="color: red;">logout</a>
                 </small>
 
-            <?php endif ?>
+
         </div>
     </div>
 </div>
 <h1>Test1</h1>
-</body>
+</body> 
 </html>

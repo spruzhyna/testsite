@@ -256,3 +256,32 @@ footer {
     min-height: 120px;
     border-radius: 0px;
 }
+.login_reg_system {
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+}
+.input-group {
+    color:white;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+form {
+    background-color: black;
+    margin:auto;
+}
+.login_reg_system, form,  a {
+  padding: 10px 20px;
+  color: #d1633c;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 3px
+}
+button {
+    background-color: #d1633c;
+    margin-top: 12px;
+}

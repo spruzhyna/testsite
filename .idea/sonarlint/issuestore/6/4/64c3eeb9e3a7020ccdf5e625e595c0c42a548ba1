@@ -1,0 +1,31 @@
+
+Z	php:S1131:"@Remove the useless trailing whitespaces at the end of this line.(öœù…øÿÿÿÿ
+Z	php:S1131@"@Remove the useless trailing whitespaces at the end of this line.(öœù…øÿÿÿÿ
+R	php:S1808"=Move this open curly brace to the beginning of the next line.(Ùé¾²
+W	php:S1808Q"=Move this open curly brace to the beginning of the next line.(Šæàõıÿÿÿÿ
+W	php:S1808["=Move this open curly brace to the beginning of the next line.(ÇÄşÄøÿÿÿÿ
+X	php:S1808˜"=Move this open curly brace to the beginning of the next line.(Ş”®×ùÿÿÿÿ
+X	php:S1808"=Move this open curly brace to the beginning of the next line.(öâÛùÿÿÿÿ
+_	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(Ùé¾²
+d	php:S1808Q"JPut one space between the closing parenthesis and the opening curly brace.(Šæàõıÿÿÿÿ
+d	php:S1808["JPut one space between the closing parenthesis and the opening curly brace.(ÇÄşÄøÿÿÿÿ
+F	php:S1808"0Remove all space before the closing parenthesis.(ö·‰
+e	php:S1808˜"JPut one space between the closing parenthesis and the opening curly brace.(Ş”®×ùÿÿÿÿ
+`	php:S1808 "JPut one space between the closing parenthesis and the opening curly brace.(äçŒ¥
+e	php:S1808¢"JPut one space between the closing parenthesis and the opening curly brace.(ß‡ıúÿÿÿÿ
+[	php:S1808?"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S1808y"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+\	php:S1808‰"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+\	php:S1808’"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+nphp:S100"TRename function "display_error" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(öâÛùÿÿÿÿ
+>	php:S2115")Add password protection to this database.(¼ú¤½
+8	php:S1780©"Remove this closing tag "?>".(Ö‘äÏúÿÿÿÿ
+qphp:S117#"]Rename this local variable "$password_1" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(áÊìĞ
+qphp:S117$"]Rename this local variable "$password_2" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(ş¯øÕ
+ophp:S1179"\Rename this local variable "$user_type" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(Í®O
+}php:S117E"dRename this local variable "$logged_in_user_id" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(„¯ãıÿÿÿÿ
+uphp:S117s"aRename this local variable "$logged_in_user" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¨€²
+k	php:S1192H"VDefine a constant instead of duplicating this literal "You are now logged in" 3 times.(½«Ò¬
+`	php:S1126‡"EReplace this "if-then-else" statement by a single "return" statement.(Èôµ®ùÿÿÿÿ
+[	php:S1126"EReplace this "if-then-else" statement by a single "return" statement.(ö·‰
+r	php:S1488V"]Immediately return this expression instead of assigning it to the temporary variable "$user".(±ô©

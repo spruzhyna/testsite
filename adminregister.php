@@ -1,4 +1,4 @@
-<?php include('form.php') ?>
+<?php include('adminform.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form method="post" action="register.php">
+<form method="post" action="adminregister.php">
 
     <?php echo display_error(); ?>
     <div class="login_reg_system">

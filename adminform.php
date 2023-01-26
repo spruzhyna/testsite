@@ -24,8 +24,8 @@ if (isset($_POST['login_btn'])) {
 
 if (isset($_GET['logout'])) {
     session_destroy();
-    unset($_SESSION['user']);
-    header("location: ../login.php");
+    unset($_SESSION['Admin']);
+    header("location: ../adminlogin.php");
 }
 
 // REGISTER USER
@@ -58,7 +58,7 @@ function register(){
 
         if (isset($_POST['user_type'])) {
             $user_type = e($_POST['user_type']);
-            $query = "INSERT INTO Users (username, email, password_1) 
+            $query = "INSERT INTO Admins (username, email, password_1) 
         VALUES('$username', '$email', '$password')";
 
         try {
@@ -68,17 +68,17 @@ function register(){
             die;
         }
            // mysqli_query($db, $query);
-            $_SESSION['success']  = "New user successfully created!!";
+            $_SESSION['success']  = "New Admin successfully created!!";
             //header('location: home.php');
         }else{
-            $query = "INSERT INTO Users (username, email, password_1) 
+            $query = "INSERT INTO Admins (username, email, password_1) 
         VALUES('$username', '$email', '$password')";
             mysqli_query($db, $query);
 
             // get id of the created user
-            $logged_in_user_id = mysqli_insert_id($db);
+            $logged_in_Admins_id = mysqli_insert_id($db);
 
-            $_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
+            $_SESSION['Admin'] = getAdminById($logged_in_Admins_id); // put logged in user in session
             $_SESSION['success']  = "You are now logged in";
             header('location: index.php');
             try {
@@ -100,9 +100,9 @@ try {
     echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
     die;
 }
-function getUserById($id){
+function getAdminById($id){
     global $db;
-    $query = "SELECT * FROM Users WHERE id=" . $id;
+    $query = "SELECT * FROM Admins WHERE id=" . $id;
     $result = NULL;
 
     try {
@@ -113,8 +113,8 @@ function getUserById($id){
     }
     
 
-    $user = mysqli_fetch_assoc($result);
-    return $user;
+    $Admins = mysqli_fetch_assoc($result);
+    return $Admins;
 }
 // LOGIN USER
 function login(){
@@ -138,7 +138,7 @@ function login(){
     if (count($errors) == 0) {
         $password = md5($password);
 
-        $query = "SELECT * FROM Users WHERE username='$username' AND password_1='$password' LIMIT 1";
+        $query = "SELECT * FROM Admins WHERE username='$username' AND password_1='$password' LIMIT 1";
         $results = mysqli_query($db, $query);
         try {
             $result = mysqli_query($db, $query);
@@ -151,11 +151,11 @@ function login(){
             $logged_in_user = mysqli_fetch_assoc($results);
             if ($logged_in_user['user_type'] == 'admin') {
 
-                $_SESSION['user'] = $logged_in_user;
+                $_SESSION['Admin'] = $logged_in_Admins;
                 $_SESSION['success']  = "You are now logged in";
                 header('location: index.php');
             }else{
-                $_SESSION['user'] = $logged_in_user;
+                $_SESSION['Admin'] = $logged_in_Admins;
                 $_SESSION['success']  = "You are now logged in";
 
                 header('location: index.php');
@@ -168,7 +168,7 @@ function login(){
 
 function isLoggedIn()
 {
-    if (isset($_SESSION['user'])) {
+    if (isset($_SESSION['Admin'])) {
         return true;
     }else{
         return false;
@@ -177,7 +177,7 @@ function isLoggedIn()
 
 function isAdmin()
 {
-    if (isset($_SESSION['user']) && $_SESSION['user']['user_type'] == 'admin' ) {
+    if (isset($_SESSION['Admin']) && $_SESSION['user']['user_type'] == 'admin' ) {
         return true;
     }else{
         return false;
