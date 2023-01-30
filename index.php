@@ -9,6 +9,8 @@
     <link rel='stylesheet' type='text/css' href='style/style.css' />
 </head>
 <body>
+
+
 <header>
     <div class="header-left">
         <a href="index2.html" target="_blank"> Menu</a>
@@ -82,6 +84,7 @@
         date_default_timezone_set('Europe/Berlin');
         $date = date('d.m.y h:i:s');
         echo $date;
+        echo ("helo world");
         ?>
     </span>
 <footer>
