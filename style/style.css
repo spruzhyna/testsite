@@ -285,3 +285,16 @@ button {
     background-color: #d1633c;
     margin-top: 12px;
 }
+.add_product_system {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: #d1633c;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px
+ }

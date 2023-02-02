@@ -1,6 +1,6 @@
 <?php
 //include connection file 
-include('pricePDF.php');
+include('price_salat_PDF.php');
 include_once('fpdf/fpdf.php');
  
 class PDF extends FPDF
@@ -11,7 +11,7 @@ function Header()
     $this->SetFont('Arial','B',13);
     // Move to the right
     // Title
-    $this->Cell(80,10,'Burger List',1,0,'C');
+    $this->Cell(80,10,'Salat List',1,0,'C');
     // Line break
     $this->Ln(20);
 }
@@ -28,10 +28,10 @@ function Footer()
 }
 }
  
-$display_heading = array('id'=>'id', 'burgername'=> 'burgername', 'price'=> 'price');
+$display_heading = array('id'=>'id', 'salatname'=> 'salatname', 'price'=> 'price');
  
-$result = mysqli_query($conn, "SELECT id, burgername, price FROM Burgers") or die("database error:". mysqli_error($conn));
-$header = mysqli_query($conn, "SHOW columns FROM Burgers WHERE field != 'created_on'");
+$result = mysqli_query($conn, "SELECT id, salatname, price FROM Salats") or die("database error:". mysqli_error($conn));
+$header = mysqli_query($conn, "SHOW columns FROM Salats WHERE field != 'created_on'");
  
 $pdf = new PDF();
 //header
