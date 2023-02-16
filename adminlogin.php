@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form method="post" action="login.php">
+<form method="post" action="adminlogin.php">
 
     <?php echo display_error(); ?>
    <div class="login_reg_system">
